@@ -170,6 +170,8 @@ namespace SampleClient
                 await manager.StartAsync ();
             }
 
+            engine.PortForwardingEnabled = true;
+
             // While the torrents are still running, print out some stats to the screen.
             // Details for all the loaded torrent managers are shown.
             int i = 0;
